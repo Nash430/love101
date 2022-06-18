@@ -1,0 +1,291 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+.container {
+  max-width: 100% !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  height: 100%;
+}
+
+
+
+
+.showResult {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s ease-in both;
+  animation: fadeIn 1s ease-in both;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.DotStyle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-size: 115%;
+}
+
+
+.btn-primary {
+  width: 90%;
+  height: 15vh
+}
+
+.btnSpan{
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+.btn:focus {
+     outline: 5px #fbdf72 solid !important;
+     opacity: 1;
+ }
+
+ .btn:hover {
+  outline: #fad585 !important;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary{
+  background-color: #fad585 !important;
+  border-color: #fad585 !important;
+  background-image: url("../public/images/btnBg.png") !important;
+  background-repeat: repeat !important;
+}
+
+.chooseTxt{
+  font-size: 1.3rem;
+}
+
+.dotIcon{
+  font-size: 100px;
+}
+
+.img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.draw-wrapper {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 0.2s;
+
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+      padding: 5px 15px;
+      margin: 8%;
+      background-color: white;
+      //box-shadow: 1px 2px rgba(0,0,0,.3);
+      border: 1px solid rgba(0, 0, 0, .2);
+      width: 200px;
+      border-radius: 10px;
+      //border: 1px rgba(0, 0, 0, 0.7) solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 2px 2px 10px;
+
+      img.tarot {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          width: 319%;
+        }
+
+      }
+
+      img:hover {
+        width: 319%;
+      }
+
+      img.reversed {
+        transform: rotate(180deg);
+      }
+    }
+
+    .flag-name {
+      opacity: 0.6;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 5px;
+    }
+
+    .card-name {
+      opacity: 0.6;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .showResult {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    display: grid;
+    padding: 12px
+  }
+
+  .draw-wrapper {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 0.2s;
+
+    .card-set {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .card {
+        padding: 7px 20px;
+        margin: 20%;
+        width: auto;
+        font-size: 100px;
+
+        img.tarot {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+
+          &:hover {
+            width: 319%;
+          }
+        }
+
+        img.reversed {
+          transform: rotate(180deg);
+        }
+      }
+
+      .flag-name {
+        opacity: 0.6;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 5px;
+      }
+
+      .card-name {
+        opacity: 0.6;
+        font-weight: bold;
+        font-size: 0.3em;
+        padding: 5px;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .btnSpan{
+    font-size: 11rem;
+  }
+
+  .chooseTxt{
+    font-size: 7.3rem;
+  }
+
+  .dotIcon{
+    font-size: 30rem;
+    cursor: pointer;
+  }
+
+  .DotStyle{
+    font-size: 6rem;
+  }
+}

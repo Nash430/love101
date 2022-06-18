@@ -1,0 +1,295 @@
+{
+    "cardData": [
+      {
+        "url": "./images/LC_1.png",
+        "name": "1.選擇",
+        "rank": 0,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_2.png",
+        "name": "2.說再見",
+        "rank": 1,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_3.png",
+        "name": "3.打包",
+        "rank": 2,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_4.png",
+        "name": "4.迎向未知",
+        "rank": 3,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_5.png",
+        "name": "5.放下",
+        "rank": 4,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_6.png",
+        "name": "6.離開",
+        "rank": 5,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_7.png",
+        "name": "7.接納恐懼",
+        "rank": 6,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_8.png",
+        "name": "8.孤單",
+        "rank": 7,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_9.png",
+        "name": "9.痛苦",
+        "rank": 8,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_10.png",
+        "name": "10.靠近",
+        "rank": 9,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_11.png",
+        "name": "11.等待",
+        "rank": 10,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_12.png",
+        "name": "12.信任",
+        "rank": 11,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_13.png",
+        "name": "13.承諾",
+        "rank": 12,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_14.png",
+        "name": "14.探險",
+        "rank": 13,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_15.png",
+        "name": "15.清理",
+        "rank": 14,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_16.png",
+        "name": "16.失落",
+        "rank": 15,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_17.png",
+        "name": "17.控制",
+        "rank": 16,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_18.png",
+        "name": "18.煩惱",
+        "rank": 17,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_19.png",
+        "name": "19.忙碌",
+        "rank": 18,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_20.png",
+        "name": "20.無自我價值",
+        "rank": 19,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_21.png",
+        "name": "21.心碎",
+        "rank": 20,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_22.png",
+        "name": "22.接受",
+        "rank": 21,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_23.png",
+        "name": "23.面對真實",
+        "rank": 22,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_24.png",
+        "name": "24.在意",
+        "rank": 23,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_25.png",
+        "name": "25.做決定",
+        "rank": 24,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_26.png",
+        "name": "26.跟隨直覺",
+        "rank": 25,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_27.png",
+        "name": "27.保持希望",
+        "rank": 26,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_28.png",
+        "name": "28.愛自己",
+        "rank": 27,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_29.png",
+        "name": "29.對焦與渴望",
+        "rank": 28,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_30.png",
+        "name": "30.慶祝",
+        "rank": 29,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_31.png",
+        "name": "31.幸福感",
+        "rank": 30,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_32.png",
+        "name": "32.犒賞自己",
+        "rank": 31,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_33.png",
+        "name": "33.作大夢",
+        "rank": 32,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_34.png",
+        "name": "34.配合演出",
+        "rank": 33,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_35.png",
+        "name": "35.逆向思考",
+        "rank": 34,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_36.png",
+        "name": "36.連結溝通",
+        "rank": 35,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_37.png",
+        "name": "37.創造",
+        "rank": 36,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_38.png",
+        "name": "38.全然投入",
+        "rank": 37,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_39.png",
+        "name": "39.自由書寫",
+        "rank": 38,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_40.png",
+        "name": "40.嘗試新的",
+        "rank": 39,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_41.png",
+        "name": "41.服務",
+        "rank": 40,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_42.png",
+        "name": "42分享",
+        "rank": 41,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_43.png",
+        "name": "43.舞台與觀眾",
+        "rank": 42,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_44.png",
+        "name": "44.靜心冥想",
+        "rank": 43,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_45.png",
+        "name": "45.順勢而為",
+        "rank": 44,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_46.png",
+        "name": "46.欣賞",
+        "rank": 45,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_47.png",
+        "name": "47.完成",
+        "rank": 46,
+        "suit": "major"
+      },
+      {
+        "url": "./images/LC_48.png",
+        "name": "48.禮物",
+        "rank": 47,
+        "suit": "major"
+      }
+      
+      
+    ]
+  }
+  
