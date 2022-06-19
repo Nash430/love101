@@ -5,7 +5,6 @@ import Layout from '../component/Layout'
 import React, { Component, useState } from "react";
 import { Container, Row, Col, Collapse, Button, CardBody, Card } from "reactstrap";
 import { FaRegDotCircle, FaUndoAlt } from "react-icons/fa";
-import LoveCard from '../component/LoveCard'
 import  {withRouter}  from 'next/router';
 import { Modal } from 'react-native-web';
 import Image from 'next/image'
