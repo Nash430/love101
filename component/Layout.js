@@ -20,8 +20,6 @@ const Layout = (props) => {
 
     return (
         <div style={FullStyle}>
-            {/* style={{width: "100%"}} className='logo_bg */}
-           
             <Header />
             {props.children}
             <Footer />

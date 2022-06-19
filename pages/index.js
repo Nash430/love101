@@ -11,20 +11,7 @@ import { Modal } from 'react-native-web';
 import router from 'next/router';
 import { FaDiceFive } from 'react-icons/fa';
 
-const indexRow = {
-  display: "grid",
-  height: "100%",
-  justifyContent: "center",
-  gridTemplateColumns: "50% 50%",
-  gridTemplateRows: "30% 30% 30% 10%",
-  alignItems: "center",
-  textAlign: "center",
-  padding: "6%",
-  flexWrap: "wrap",
-  justifyContent: "center",
-  flexDirection: "column",
 
-}
 
 class Index extends React.Component {
 
@@ -37,32 +24,8 @@ class Index extends React.Component {
 
     }
     this.SelectNum = this.SelectNum.bind(this);
-    // setTimeout(() => {
-    //   // this.isLoading(false);
-    //   this.state = {isLoading: false}
-    // }, 3000);
 
   }
-
-  ComponentDidMount() {
-    // setTimeout(() => {
-    //   this.isLoading(false);
-    // }, 3000);
-  }
-
-
-
-  // useEffect = (e) => {
-  // fetch("https://api.imgflip.com/get_memes")
-  //     .then((res) => res.json())
-  //     .then((data) => setMemes(data));
-
-  // setTimeout(() => {
-  //   isLoding(false);
-  // }, 3000);
-  // }
-
-
 
 
 
@@ -86,7 +49,7 @@ class Index extends React.Component {
         <Layout>
         <Logo />
           <Container >
-            <div style={indexRow}>
+            <div className='indexRow'>
               <Col><Button value={1} onClick={this.SelectNum}><span className='btnSpan' >1</span></Button></Col>
               <Col><Button value={2} onClick={this.SelectNum}><span className='btnSpan' >2</span></Button></Col>
               <Col><Button value={3} onClick={this.SelectNum}><span className='btnSpan' >3</span></Button></Col>
