@@ -45,11 +45,12 @@ class Logo extends React.Component {
         const { isLoading } = this.state
         return (
             // style={{width: "100%"}} className='logo_bg'
-            <div style={{marginTop: "50%"}}>
-
-                <img style={{ width: "100vh", height: "100vh"  }} className='logo_bg' src='./images/logo_bg.png' />
-                <img style={{ width: "100vh", height: "100vh" }} className='logo_ball' src='./images/logo_ball.png' />
-
+            // style={{ marginTop: "50%" }}
+            <div style={{ width: "100%", height: "100%", position: "fixed", display: "flex", backgroundColor: "#ffffff" }} >
+                <div>
+                <img style={{ width: "100%", height: "60%", top: "20%" }} className='logo_bg' src='./images/logo_bg.png' />
+                <img style={{ width: "100%", height: "60%", top: "20%" }} className='logo_ball' src='./images/logo_ball.png' />
+                </div>
             </div>
         );
     }

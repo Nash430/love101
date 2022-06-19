@@ -82,9 +82,9 @@ class Index extends React.Component {
     const { isLoading } = this.state
     return (
       <div >
-        <Logo />
+        
         <Layout>
-
+        <Logo />
           <Container >
             <div style={indexRow}>
               <Col><Button value={1} onClick={this.SelectNum}><span className='btnSpan' >1</span></Button></Col>
