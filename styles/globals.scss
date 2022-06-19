@@ -29,16 +29,123 @@ a {
   height: 100%;
 }
 
-.logo_bg{
-  background-image: url("../public/images/logo_bg.png");
+.logoFull {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #ffffff ;
+  animation-name: logoFull;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  
+
+}
+
+@keyframes logoFull {
+
+  0% { -webkit-transform: scale(1); opacity: 1; }
+
+ 100% {visibility: hidden; }
+
+}
+
+.logoAnimate {
+  animation-name: logoAnimate;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+
+}
+
+@keyframes logoAnimate {
+  0%   {
+    transform: scale(0.1);
+  }
+  30%   {
+    transform: scale(1.0);
+  }
+  50%  {
+    transform: scale(1.0);
+  }
+  70%  {
+    transform: scale(1.0);
+  }
+  100% {
+     transform: scale(1);
+
+    }
+
+    
+}
+
+.logo_bg {
   background-repeat: no-repeat;
   position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%;
 }
 
-.logo_ball{
+
+.logo_ball {
   position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+  animation-name: logoBallShake;
+  animation-delay: 1.5s ;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
 
+@keyframes logoBallShake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 
 
 
@@ -59,14 +166,14 @@ a {
 
 }
 
-.DotStyle{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      font-size: 115%;
+.DotStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 115%;
 }
 
 
@@ -75,17 +182,17 @@ a {
   height: 15vh
 }
 
-.btnSpan{
+.btnSpan {
   font-size: 3rem;
   color: whitesmoke;
 }
 
 .btn:focus {
-     outline: 5px #fbdf72 solid !important;
-     opacity: 1;
- }
+  outline: 5px #fbdf72 solid !important;
+  opacity: 1;
+}
 
- .btn:hover {
+.btn:hover {
   outline: #fad585 !important;
 }
 
@@ -104,21 +211,21 @@ a {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #fad585 !important;
   border-color: #fad585 !important;
   background-image: url("../public/images/btnBg.png") !important;
   background-repeat: repeat !important;
 }
 
-.chooseTxt{
+.chooseTxt {
   font-size: 1.3rem;
 }
 
-.dotIcon{
+.dotIcon {
   font-size: 100px;
 }
 
@@ -282,20 +389,20 @@ a {
 }
 
 @media (min-width: 1440px) {
-  .btnSpan{
+  .btnSpan {
     font-size: 11rem;
   }
 
-  .chooseTxt{
+  .chooseTxt {
     font-size: 7.3rem;
   }
 
-  .dotIcon{
+  .dotIcon {
     font-size: 30rem;
     cursor: pointer;
   }
 
-  .DotStyle{
+  .DotStyle {
     font-size: 6rem;
   }
 }

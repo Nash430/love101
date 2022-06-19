@@ -46,10 +46,11 @@ class Logo extends React.Component {
         return (
             // style={{width: "100%"}} className='logo_bg'
             // style={{ marginTop: "50%" }}
-            <div style={{ width: "100%", height: "100%", position: "fixed", display: "flex", backgroundColor: "#ffffff" }} >
-                <div>
-                <img style={{ width: "100%", height: "60%", top: "20%" }} className='logo_bg' src='./images/logo_bg.png' />
-                <img style={{ width: "100%", height: "60%", top: "20%" }} className='logo_ball' src='./images/logo_ball.png' />
+            // logoFull
+            <div className='logoFull'   >
+                <div className='logoAnimate' style={{ width: "100%", height: "100%",  display: "flex",  }}  >
+                    <img className='logo_bg' src='./images/logo_bg.png' />
+                    <img className='logo_ball' src='./images/logo_ball.png' />
                 </div>
             </div>
         );
