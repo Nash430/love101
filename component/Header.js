@@ -6,7 +6,7 @@ const headerStyle = {
     display: "grid",
     alignItems: "center",
     boxShadow: "0px 3px 3px #888888",
-    zIndex: "9",
+    zIndex: "auto",
     FontSize: "80%"
 }
 

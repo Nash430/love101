@@ -1,3 +1,6 @@
+
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Header from './Header'
 import Footer from './Footer'
 const FullStyle = {
@@ -10,13 +13,15 @@ const FullStyle = {
     gridTemplateColumns: "100%",
     alignItems: "center",
     backgroundColor: "#ffffff",
-    overflow:"hidden"
+    overflow: "hidden"
 }
 
 const Layout = (props) => {
 
     return (
         <div style={FullStyle}>
+            {/* style={{width: "100%"}} className='logo_bg */}
+           
             <Header />
             {props.children}
             <Footer />

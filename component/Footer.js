@@ -6,7 +6,7 @@ const FooterStyle = {
     display: "grid",
     alignItems: "center",
     boxShadow: "0px 3px 3px 5px #888888",
-    zIndex: "9"
+    zIndex: "auto"
 }
 
 const Footer = () => {
