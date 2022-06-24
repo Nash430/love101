@@ -1,18 +1,10 @@
 import Link from 'next/link'
 
-const FooterStyle = {
-    backgroundColor: "bisque",
-    height: "100%",
-    display: "grid",
-    alignItems: "center",
-    boxShadow: "0px 3px 3px 5px #888888",
-    zIndex: "auto"
-}
 
 const Footer = () => {
 
     return (
-        <div style={FooterStyle} >
+        <div className='FooterStyle'>
            <h1>footer</h1>
         </div>
     )

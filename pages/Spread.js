@@ -5,7 +5,7 @@ import Layout from '../component/Layout'
 import React, { Component, useState } from "react";
 import { Container, Row, Col, Collapse, Button, CardBody, Card } from "reactstrap";
 import { FaRegDotCircle, FaUndoAlt } from "react-icons/fa";
-import  {withRouter}  from 'next/router';
+import { withRouter } from 'next/router';
 import { Modal } from 'react-native-web';
 import Image from 'next/image'
 import card from "./card.json";
@@ -29,7 +29,7 @@ class Spread extends React.Component {
     }
 
 
-     Spread = () => {
+    Spread = () => {
 
         this.setState({
             thinkCircle: false,
@@ -61,11 +61,21 @@ class Spread extends React.Component {
             <div >
                 <Layout>
                     <Container >
-                        <div className="DotStyle">
-                            <div><FaRegDotCircle onClick={this.Spread} className="dotIcon" /></div>
+                        {/* <div > */}
+                            <div className='DotStyle' >
+                                {/* <FaRegDotCircle onClick={this.Spread} className="dotIcon" /> */}
+                                {/* <div>
+
+                                </div> */}
+
+                                {/* <div><img className='spreadLOGO' src='./images/logo_bg.png' /></div> */}
+                                <div><img onClick={this.Spread} className='spreadBALL' src='./images/logo_ball.png' /></div>
+
+                            </div>
                             <div>您選擇抽{this.props.router.query.choose}張牌</div>
                             <div>請冥想並按下按鈕...</div>
-                        </div>
+
+                        {/* </div> */}
                         <Modal visible={showResult}>
                             <Layout>
                                 <div className='showResult'>

@@ -56,7 +56,7 @@ class Index extends React.Component {
               <Col><Button value={4} onClick={this.SelectNum}><span className='btnSpan' >4</span></Button></Col>
               <Col><Button value={5} onClick={this.SelectNum}><span className='btnSpan' >5</span></Button></Col>
               <Col><Button value={6} onClick={this.SelectNum}><span className='btnSpan' >6</span></Button></Col>
-              <Col style={{ width: "190%" }}><p className='chooseTxt'>請選擇要抽幾張牌</p></Col>
+              <Col style={{ width: "200%" }}><p className='chooseTxt'>請選擇要抽幾張牌</p></Col>
             </div>
           </Container>
         </Layout>
