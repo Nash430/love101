@@ -1,4 +1,8 @@
 import Link from 'next/link'
+import { BsFacebook } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaLine} from "react-icons/ai";
+
 
 const FooterStyle = {
     backgroundColor: "bisque",
@@ -12,9 +16,18 @@ const FooterStyle = {
 const Footer = () => {
 
     return (
+     
+           
         <div style={FooterStyle} >
-           <h1>footer</h1>
+           
+           <div><BsFacebook className="dotIcon" />
         </div>
+        
+        </div>
+
+
+
+
     )
 
 }
