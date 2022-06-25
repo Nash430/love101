@@ -20,7 +20,7 @@ const Footer = () => {
            
         <div style={FooterStyle} >
            
-          <a href="https://www.facebook.com/whoyouare.divination"><BsFacebook className="footerIcon" /></a>
+        <a href="https://www.facebook.com/whoyouare.divination"><BsFacebook className="footerIcon" /></a>
          <a href="https://www.instagram.com/whoyouare_divination/"> <AiOutlineInstagram className="footerIcon"/></a>
          <a href="https://line.me/R/ti/p/%40373nokcl">< FaLine className="footerIcon" /></a> 
          

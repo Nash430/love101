@@ -6,10 +6,7 @@ import Logo from '../component/Logo';
 import React, { Component, useState, useEffect } from "react";
 // import { LoadingScreen } from "react-loading-screen";
 import { Container, Row, Col, Button, } from "react-bootstrap";
-import { Modal } from 'react-native-web';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import router from 'next/router';
-import { FaDiceFive } from 'react-icons/fa';
 
 
 
@@ -31,6 +28,10 @@ class Index extends React.Component {
 
   SelectNum = (e) => {
     var cardNum = e.currentTarget.value
+
+
+    // ˇˇˇˇˇˇˇˇˇ
+
     router.push({
       pathname: '/Spread',
       query: {
@@ -38,6 +39,8 @@ class Index extends React.Component {
       }
 
     });
+
+    // ^^^^^^^^   切換過去頁面的時候，順便把當前所選取的value傳過去Spread頁面
 
   }
 
@@ -50,12 +53,12 @@ class Index extends React.Component {
         <Logo />
           <Container >
             <div className='indexRow'>
-              <Col><Button value={1} onClick={this.SelectNum}><span className='btnSpan' >1</span></Button></Col>
-              <Col><Button value={2} onClick={this.SelectNum}><span className='btnSpan' >2</span></Button></Col>
-              <Col><Button value={3} onClick={this.SelectNum}><span className='btnSpan' >3</span></Button></Col>
-              <Col><Button value={4} onClick={this.SelectNum}><span className='btnSpan' >4</span></Button></Col>
-              <Col><Button value={5} onClick={this.SelectNum}><span className='btnSpan' >5</span></Button></Col>
-              <Col><Button value={6} onClick={this.SelectNum}><span className='btnSpan' >6</span></Button></Col>
+              <Col><Button value={1} onClick={this.SelectNum}><span className='btnSpan' > 1 </span></Button></Col>
+              <Col><Button value={2} onClick={this.SelectNum}><span className='btnSpan' > 2 </span></Button></Col>
+              <Col><Button value={3} onClick={this.SelectNum}><span className='btnSpan' > 3 </span></Button></Col>
+              <Col><Button value={4} onClick={this.SelectNum}><span className='btnSpan' > 4 </span></Button></Col>
+              <Col><Button value={5} onClick={this.SelectNum}><span className='btnSpan' > 5 </span></Button></Col>
+              <Col><Button value={6} onClick={this.SelectNum}><span className='btnSpan' > 6 </span></Button></Col>
               <Col style={{ width: "190%" }}><p className='chooseTxt'>請選擇要抽幾張牌</p></Col>
             </div>
           </Container>

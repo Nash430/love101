@@ -3,11 +3,10 @@
 import Header from '../component/Header'
 import Layout from '../component/Layout'
 import React, { Component, useState } from "react";
-import { Container, Row, Col, Collapse, Button, CardBody, Card } from "reactstrap";
-import { FaRegDotCircle, FaUndoAlt } from "react-icons/fa";
+import { Container, } from "reactstrap";
+import { FaRegDotCircle } from "react-icons/fa";
 import  {withRouter}  from 'next/router';
 import { Modal } from 'react-native-web';
-import Image from 'next/image'
 import card from "./card.json";
 
 
@@ -17,8 +16,6 @@ class Spread extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            collapse: false,
-            thinkCircle: true,
             showResult: false
         }
         this.Spread = this.Spread.bind(this);
@@ -32,21 +29,30 @@ class Spread extends React.Component {
      Spread = () => {
 
         this.setState({
-            thinkCircle: false,
             showResult: true
         })
-        const AllResult = []
+
+        const AllResult = [] 
+
         var arr = card.cardData;
+
+
         var cardNum = this.props.router.query.choose
+
+
         for (var i = 0; i < cardNum; i++) {
+
             var index = Math.floor(Math.random() * arr.length);
+
             AllResult.push(arr[index]);
+
             arr.splice(index, 1);
 
 
             console.log(AllResult, "AllResult")
+
             this.setState({
-                AllResult: AllResult,
+                CardResult: AllResult,
 
             })
 
@@ -56,7 +62,7 @@ class Spread extends React.Component {
     }
 
     render() {
-        const { showResult, thinkCircle, SelectNum, ShowImgUrl, showName, AllResult } = this.state;
+        const { showResult, CardResult } = this.state;
         return (
             <div >
                 <Layout>
@@ -69,9 +75,13 @@ class Spread extends React.Component {
                         <Modal visible={showResult}>
                             <Layout>
                                 <div className='showResult'>
-                                    {AllResult && AllResult.length ?
-                                        AllResult.map((value, item) => (
+                                    {CardResult && CardResult.length &&
+                                        CardResult.map((value, item) => (
 
+                                             // { showResult ?  <p>註冊成功</p>   :  <p>註冊失敗sorry</p>  }
+                                                        // 以上這兩個都是布林值的開關
+                                            // { showResult (如果前面這個東西是true)  &&   (就會顯示後面的東西)  }                                          
+                                        
                                             <div className="draw-wrapper" key={item}>
                                                 <div className="card-set">
                                                     <div className="card" >
@@ -80,8 +90,8 @@ class Spread extends React.Component {
                                                     </div>
                                                 </div>
                                             </div>
-
-                                        )) : null}
+                                        ))} 
+                                        
                                 </div>
                             </Layout>
                         </Modal>
