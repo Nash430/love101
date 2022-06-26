@@ -16,7 +16,7 @@ const Header = () => {
         
         <div style={headerStyle}>
             <title>我只是想抽牌</title>
-           <Link href={"/"} ><h1>我只是想抽牌</h1></Link>
+           <Link href={"/"} ><h2 style={{ color: "#d19a20" }}>我只是想抽牌</h2></Link>
         </div>
     )
 

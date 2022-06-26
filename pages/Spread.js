@@ -68,9 +68,11 @@ class Spread extends React.Component {
                 <Layout>
                     <Container >
                         <div className="DotStyle">
-                            <div><GrActions onClick={this.Spread} className="dotIcon" /></div>
-                            <div>您選擇抽{this.props.router.query.choose}張牌</div>
-                            <div>請心中想著問題 冥想並按下按鈕...</div>
+                            <div>
+                                <GrActions onClick={this.Spread} className="dotIcon" />
+                            </div>
+                            <div style={{  color:"#f5c03f", fontWeight: "500" }} >您選擇抽{this.props.router.query.choose}張牌</div>
+                            <div style={{  color:"#f5c03f", fontWeight: "500" }} >請心中想著問題 冥想並按下按鈕...</div>
                         </div>
                         <Modal visible={showResult}>
                             <Layout>
