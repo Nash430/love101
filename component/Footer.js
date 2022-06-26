@@ -1,7 +1,5 @@
 import Link from 'next/link'
-import { BsFacebook } from "react-icons/bs";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { FaLine} from "react-icons/fa";
+
 
 
 const FooterStyle = {
@@ -20,13 +18,15 @@ const Footer = () => {
            
         <div style={FooterStyle} >
            
-        <a href="https://www.facebook.com/whoyouare.divination"><BsFacebook className="footerIcon" /></a>
-         <a href="https://www.instagram.com/whoyouare_divination/"> <AiOutlineInstagram className="footerIcon"/></a>
-         <a href="https://line.me/R/ti/p/%40373nokcl">< FaLine className="footerIcon" /></a> 
+            <div className='allfooter'>
+                <a href="https://www.facebook.com/whoyouare.divination" ><img className="facebook" src="./images/icon-fb.png"></img></a>
+                <a href="https://www.instagram.com/whoyouare_divination/"><img className="instagram" src="./images/icon-ig.png"></img></a>
+                <a href="https://www.youtube.com/channel/UCqoThkmy2Jc0UwdZYklDVFw"><img className="youtube" src="./images/icon-yt.png"></img></a>
+          </div>
          
         </div>
 
-
+ 
 
 
     )

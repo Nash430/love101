@@ -13,6 +13,7 @@ a {
 
 * {
   box-sizing: border-box;
+  
 }
 
 
@@ -211,6 +212,9 @@ a {
 
 .chooseTxt {
   font-size: 1.3rem;
+  font-family: Microsoft JhengHei;
+  color:#fad784;
+  font-weight: 500;
 }
 
 .dotIcon {
@@ -391,4 +395,30 @@ a {
   .DotStyle {
     font-size: 6rem;
   }
+
+  
+}
+
+
+
+.allfooter{
+  
+  display: flex;
+  margin: auto;
+
+}
+
+.facebook{
+  width: 35px;
+  margin: 5px;
+}
+
+.instagram{
+  width: 35px;
+  margin: 5px;
+}
+
+.youtube{
+  width: 35px;
+  margin: 5px;
 }

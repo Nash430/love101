@@ -4,7 +4,7 @@ import Header from '../component/Header'
 import Layout from '../component/Layout'
 import React, { Component, useState } from "react";
 import { Container, } from "reactstrap";
-import { FaRegDotCircle } from "react-icons/fa";
+import { GrActions } from "react-icons/gr";
 import  {withRouter}  from 'next/router';
 import { Modal } from 'react-native-web';
 import card from "./card.json";
@@ -68,9 +68,9 @@ class Spread extends React.Component {
                 <Layout>
                     <Container >
                         <div className="DotStyle">
-                            <div><FaRegDotCircle onClick={this.Spread} className="dotIcon" /></div>
+                            <div><GrActions onClick={this.Spread} className="dotIcon" /></div>
                             <div>您選擇抽{this.props.router.query.choose}張牌</div>
-                            <div>請冥想並按下按鈕...</div>
+                            <div>請心中想著問題 冥想並按下按鈕...</div>
                         </div>
                         <Modal visible={showResult}>
                             <Layout>
