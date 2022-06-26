@@ -162,6 +162,15 @@ a {
   width: 100%;
   height: 100%;
   font-size: 115%;
+
+  .spinBall{
+    width: 80%;
+  }
+  
+  .spinBG{
+    width: 80%;
+    position: absolute
+  }
 }
 
 
@@ -322,6 +331,15 @@ a {
     left: 22%;
   }
 
+  .spinBall{
+    width: 42% !important
+  }
+  
+  .spinBG{
+    width: 30% !important;
+    position: absolute;
+  }
+
 
   .logo_ball{
     position: absolute;
@@ -411,6 +429,15 @@ a {
     font-size: 2rem;
   }
 
+  .spinBall{
+    width: 42%;
+  }
+  
+  .spinBG{
+    width: 30%;
+    position: absolute;
+  }
+
   
 }
 
@@ -437,3 +464,4 @@ a {
   width: 35px;
   margin: 5px;
 }
+
