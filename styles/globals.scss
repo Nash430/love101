@@ -103,6 +103,34 @@ a {
   top: 20%;
 }
 
+.spinBall{
+  animation-name: spinBALLanimate;
+  // animation-delay: 0.8s ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+}
+
+@keyframes spinBALLanimate {
+
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  50%,100% {
+    transform: rotate(0deg);
+  }
+}
+
 
 .logo_ball {
   position: absolute;
@@ -169,7 +197,8 @@ a {
   
   .spinBG{
     width: 80%;
-    position: absolute
+    position: absolute;
+    z-index: 9
   }
 }
 

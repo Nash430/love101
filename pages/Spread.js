@@ -70,8 +70,10 @@ class Spread extends React.Component {
 
                         <div className='DotStyle' >
                             <div >
-                                <img  className='spinBG' onClick={this.Spread} src='./images/spinBG.png' />
-                                <img  className='spinBall' src='./images/spinBall.png' />
+                            <img  className='spinBG' onClick={this.Spread} src='./images/spinBG.png' />
+                            <img  className='spinBall' src='./images/spinBall.png' />
+                                
+                               
 
                             </div>
                             <div style={{ color: "#f5c03f", fontWeight: "500" }} >您選擇抽{this.props.router.query.choose}張牌</div>
