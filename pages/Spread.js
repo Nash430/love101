@@ -2,9 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Header from '../component/Header'
 import Layout from '../component/Layout'
-import React, { Component, useState } from "react";
+import React, {  } from "react";
 import { Container, } from "reactstrap";
-import { GrActions } from "react-icons/gr";
 import { withRouter } from 'next/router';
 import { Modal } from 'react-native-web';
 import card from "./card.json";
@@ -73,8 +72,6 @@ class Spread extends React.Component {
                             <img  className='spinBG' onClick={this.Spread} src='./images/spinBG.png' />
                             <img  className='spinBall' src='./images/spinBall.png' />
                                 
-                               
-
                             </div>
                             <div style={{ color: "#f5c03f", fontWeight: "500" }} >您選擇抽{this.props.router.query.choose}張牌</div>
                             <div style={{ color: "#f5c03f", fontWeight: "500" }} >請心中想著問題 冥想並按下按鈕...</div>
