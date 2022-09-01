@@ -1,0 +1,394 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: black;
+    background: white;
+  }
+}
+
+// layout
+
+.FullStyle {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 7% 85% 8%;
+  text-align: center;
+  // background-image: url(../public/images/new_bg.png);
+}
+
+.headerStyle {
+  cursor: pointer;
+  // background-image: url(../public/images/btnBg.png);
+  background-color: #f3ede5;
+  box-shadow: 1px 1px 10px #e9e2d8;
+  h2 {
+    transform: translate(0, -25%);
+  }
+}
+
+.FooterStyle {
+  // background-image: url(../public/images/btnBg.png);
+  background-color: #f3ede5;
+  box-shadow: 1px 1px 10px #e9e2d8;
+  h2 {
+    transform: translate(0, -25%);
+  }
+  .iconImg {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    img {
+      margin: 5px;
+    }
+  }
+}
+
+.logoFull {
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: white;
+  position: fixed;
+  animation-name: logoFull;
+  animation-duration: 2.8s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  .IMGbase {
+    padding: 40px;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    animation-name: IMGbase;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    .logo {
+      height: 100%;
+    }
+    .logo_ball {
+      animation-name: logoBallShake;
+      animation-delay: 0.8s;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+    }
+  }
+}
+
+.indexFull {
+  overflow: hidden;
+  height: 100%;
+  .ant-row {
+    height: 100%;
+    justify-content: center;
+
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    .background {
+      // background-image: url(../public/images/btnBg.png);
+      margin: 10px;
+      border-radius: 4px;
+      .ant-btn-primary {
+        background-image: url(../public/images/btnBg.png);
+        border-radius: 4px;
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+        border-color: #f2d48a;
+        box-shadow: 5px 5px 4px #f2ede6;
+        &:hover {
+          border-color: none;
+        }
+      }
+    }
+  }
+}
+
+// spread
+.SpreadFull {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  // background-image: url(../public/images/new_bg.png);
+  .close {
+    display: none;
+  }
+  .react {
+    // position: relative;
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    justify-content: center;
+    .thinkLogo {
+      position: relative;
+      justify-content: center;
+      right: 0%;
+      // top: 0%;
+
+      // width: 240px;
+      // height: 100%;
+      .thinkingBall {
+        z-index: 9;
+        cursor: pointer;
+        height: 100%;
+        // position: absolute;
+        right: 0%;
+        animation: mymove 1.5s infinite;
+        -webkit-animation: mymove 1.5s infinite;
+      }
+
+      .thinkingBallBased {
+        height: 100%;
+        right: 0%;
+        // position: absolute;
+      }
+    }
+  }
+}
+
+.AllResult::-webkit-scrollbar{
+  display: none
+}
+.AllResult {
+  padding: 30px;
+  -webkit-animation: fadeIn 1.5s ease-in both;
+  animation: fadeIn 1.5s ease-in both;
+  justify-content: center;
+  white-space: nowrap;
+  height: 100%;
+  overflow: auto;
+  .ant-col {
+    margin: auto;
+    .contentStyle {
+      height: 100%;
+    }
+  }
+  .loveCard{
+    max-width: 26%;
+  }
+  .ant-col-xs-9 {
+    max-width: 35%;
+  }
+  .ant-col-xs-8 {
+    max-width: 33%;
+  }
+  img {
+    width: 70%;
+    box-shadow: 1px 2px 10px grey;
+    border-radius: 4px;
+    margin-top: 7px;
+  }
+  .cardStyle789{
+    max-width: 24%;
+  }
+  .cardStyle06{
+    max-width: 25.2%;
+  }
+}
+
+//ANIME
+@keyframes logoFull {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes IMGbase {
+  0% {
+    transform: scale(0.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes logoBallShake {
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes mymove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// RWD
+@media screen and (max-width: 769px) {
+  .logoFull {
+    display: block;
+    .IMGbase {
+      position: absolute;
+      height: 70%;
+      top: 15%;
+      padding: 0px;
+    }
+  }
+  .AllResult{
+    .loveCard{
+      max-width: 33%;
+    }
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .logoFull {
+    display: block;
+    .IMGbase {
+      position: absolute;
+      height: 70%;
+      top: 15%;
+      padding: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .AllResult {
+    .ResultStyle4 {
+      .card04 {
+        .img04 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  // .ant-col-xl-6 {
+  //   // max-width: 22%;
+  // }
+  .AllResult {
+    .cardStyle04{
+      width: 70%;
+    }
+    .cardStyle05{
+      width: 90%;
+    }
+    .IMGStyle06{
+      width: 70%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .logoFull {
+    .IMGbase {
+      position: absolute;
+      height: 60%;
+      top: 20%;
+      padding: 0px;
+    }
+  }
+  .AllResult {
+    .cardStyle03{
+      width: 69%;
+    }
+    img {
+      width: 100%;
+    }
+    .ant-col-xs-9 {
+      max-width: 40%;
+    }
+    .ant-col-xs-8 {
+      max-width: 60%;
+    }
+    .loveCard{
+      max-width: 40%;
+    }
+    .cardStyle06{
+      max-width: 40%;
+    }
+    .cardStyle789{
+      max-width: 30%;
+    }
+    .ant-col-xs-6 {
+      max-width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .logoFull {
+    .IMGbase {
+      position: absolute;
+      height: 50%;
+      top: 30%;
+      padding: 0px;
+    }
+  }
+}
