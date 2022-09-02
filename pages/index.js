@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.scss";
 import Layout from "../component/Layout";
 import React from "react";
 import { Row, Col, Button } from "antd";
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 import router from "next/router";
 import Logo from "../component/Logo";
 
