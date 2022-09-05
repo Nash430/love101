@@ -77,14 +77,15 @@ class Spread extends React.Component {
         <div className="SpreadFull">
           <div className={thinkCircle ? "react" : "close"}>
             <div className="thinkLogo">
-              <div style={{ height: "100%", position: "absolute" }}>
+              {/* <div style={{ height: "100%", position: "absolute" }}> */}
                 <img
-                  //  style={{ height: "100%", position: "absolute" }}
+                   
                   className="thinkingBall"
                   onClick={this.Spread}
                   src="./images/logo_ballUP.webp"
+                  style={{ height: "100%", position: "absolute" }}
                 />
-              </div>
+              {/* </div> */}
               <img
                 className="thinkingBallBased"
                 src="./images/logo_ballBased.webp"
