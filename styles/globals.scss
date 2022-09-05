@@ -147,7 +147,7 @@ a {
     .thinkLogo {
       position: relative;
       justify-content: center;
-      right: 0%;
+      // right: 0%;
       // top: 0%;
 
       // width: 240px;
@@ -160,7 +160,6 @@ a {
         right: 0%;
         animation: mymove 1.5s infinite;
         -webkit-animation: mymove 1.5s infinite;
-        position: absolute;
       }
 
       .thinkingBallBased {
