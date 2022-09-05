@@ -83,7 +83,7 @@ class Spread extends React.Component {
                   className="thinkingBall"
                   onClick={this.Spread}
                   src="./images/logo_ballUP.webp"
-                  style={{ height: "100%", position: "absolute",backgroundPosition: 'left',transform: 'translateX(-50%)'  }}
+                  style={{  position: "absolute"  }}
                   // background-position: left;
                   // transform: translateX(-50%);
                 />
@@ -91,7 +91,7 @@ class Spread extends React.Component {
               <img
                 className="thinkingBallBased"
                 src="./images/logo_ballBased.webp"
-                // style={{ height: "100%", position: "absolute" }}
+                style={{  position: "absolute" }}
               />
             </div>
             <div>
