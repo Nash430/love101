@@ -77,17 +77,26 @@ class Spread extends React.Component {
         <div className="SpreadFull">
           <div className={thinkCircle ? "react" : "close"}>
             <div className="thinkLogo">
-              <div style={{ height: "100%", position: "absolute" }}>
+              <div style={{ height: "100%" }}>
                 <img
+                  // style={{ height: "100%", position: "absolute" }}
                   className="thinkingBall"
                   onClick={this.Spread}
                   src="./images/logo_ballUP.webp"
                 />
+                <img
+                  // style={{ height: "100%", position: "absolute" }}
+                  className="thinkingBallBased"
+                  src="./images/logo_ballBased.webp"
+                />
               </div>
-              <img
-                className="thinkingBallBased"
-                src="./images/logo_ballBased.webp"
-              />
+              {/* <div style={{ height: "100%", position: "absolute" }}> */}
+                {/* <img
+                  // style={{ height: "100%", position: "absolute" }}
+                  className="thinkingBallBased"
+                  src="./images/logo_ballBased.webp"
+                /> */}
+              {/* </div> */}
             </div>
             <div>
               <div>您選擇抽{this.props.router.query.choose}張牌</div>
