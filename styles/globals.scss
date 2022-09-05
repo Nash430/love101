@@ -32,34 +32,34 @@ a {
   width: 100%;
   display: grid;
   grid-template-rows: 7% 85% 8%;
+  grid-template-columns: 100%;
   text-align: center;
-  // background-image: url(../public/images/new_bg.png);
-}
-
-.headerStyle {
-  cursor: pointer;
-  // background-image: url(../public/images/btnBg.png);
-  background-color: #f3ede5;
-  box-shadow: 1px 1px 10px #e9e2d8;
-  h2 {
-    transform: translate(0, -25%);
+  .headerStyle {
+    cursor: pointer;
+    background-color: #f3ede5;
+    box-shadow: 1px 1px 10px #e9e2d8;
+    h2 {
+      transform: translate(0, -25%);
+    }
   }
-}
-
-.FooterStyle {
-  // background-image: url(../public/images/btnBg.png);
-  background-color: #f3ede5;
-  box-shadow: 1px 1px 10px #e9e2d8;
-  h2 {
-    transform: translate(0, -25%);
-  }
-  .iconImg {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    img {
-      margin: 5px;
+  .FooterStyle {
+    background-color: #f3ede5;
+    box-shadow: 1px 1px 10px #e9e2d8;
+    grid-template-columns: 100%;
+    h2 {
+      transform: translate(0, -25%);
+    }
+    .iconImg {
+      // height: 100%;
+      display: flex;
+      justify-content: center;
+      // gap: 10px;
+      img {
+        // margin: 5px;
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+      }
     }
   }
 }
@@ -170,8 +170,8 @@ a {
   }
 }
 
-.AllResult::-webkit-scrollbar{
-  display: none
+.AllResult::-webkit-scrollbar {
+  display: none;
 }
 .AllResult {
   padding: 30px;
@@ -187,7 +187,7 @@ a {
       height: 100%;
     }
   }
-  .loveCard{
+  .loveCard {
     max-width: 26%;
   }
   .ant-col-xs-9 {
@@ -202,10 +202,10 @@ a {
     border-radius: 4px;
     margin-top: 7px;
   }
-  .cardStyle789{
+  .cardStyle789 {
     max-width: 24%;
   }
-  .cardStyle06{
+  .cardStyle06 {
     max-width: 25.2%;
   }
 }
@@ -294,8 +294,8 @@ a {
       padding: 0px;
     }
   }
-  .AllResult{
-    .loveCard{
+  .AllResult {
+    .loveCard {
       max-width: 33%;
     }
   }
@@ -330,13 +330,13 @@ a {
   //   // max-width: 22%;
   // }
   .AllResult {
-    .cardStyle04{
+    .cardStyle04 {
       width: 70%;
     }
-    .cardStyle05{
+    .cardStyle05 {
       width: 90%;
     }
-    .IMGStyle06{
+    .IMGStyle06 {
       width: 70%;
     }
     img {
@@ -355,7 +355,7 @@ a {
     }
   }
   .AllResult {
-    .cardStyle03{
+    .cardStyle03 {
       width: 69%;
     }
     img {
@@ -367,13 +367,13 @@ a {
     .ant-col-xs-8 {
       max-width: 60%;
     }
-    .loveCard{
+    .loveCard {
       max-width: 40%;
     }
-    .cardStyle06{
+    .cardStyle06 {
       max-width: 40%;
     }
-    .cardStyle789{
+    .cardStyle789 {
       max-width: 30%;
     }
     .ant-col-xs-6 {
