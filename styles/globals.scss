@@ -143,6 +143,7 @@ a {
     height: 100%;
     display: grid;
     grid-template-rows: 80% 20%;
+    grid-template-columns: 100%;
     justify-content: center;
     .thinkLogo {
       position: relative;
