@@ -7,10 +7,10 @@ const Logo = () => {
     <div className="logoFull">
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div className="IMGbase">
-          <img className="logo logo_bg" src="./images/logo_bg.png" />
+          <img className="logo logo_bg" src="./images/logo_bg.webp" />
         </div>
         <div className="IMGbase">
-          <img className="logo logo_ball" src="./images/logo_ball.png" />
+          <img className="logo logo_ball" src="./images/logo_ball.webp" />
         </div>
       </div>
     </div>

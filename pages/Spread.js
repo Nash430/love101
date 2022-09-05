@@ -81,12 +81,12 @@ class Spread extends React.Component {
                 <img
                   className="thinkingBall"
                   onClick={this.Spread}
-                  src="./images/logo_ballUP.svg"
+                  src="./images/logo_ballUP.webp"
                 />
               </div>
               <img
                 className="thinkingBallBased"
-                src="./images/logo_ballBased.png"
+                src="./images/logo_ballBased.webp"
               />
             </div>
             <div>
