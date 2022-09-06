@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Layout from "../component/Layout";
+import Header from "../component/Header";
 import React from "react";
 import { Row, Col, Button } from "antd";
 import "antd/dist/antd.css";
@@ -11,7 +12,9 @@ import Logo from "../component/Logo";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      headerTEXT: '請選擇要抽幾張牌'
+    };
   }
 
   SelectNum = (e) => {
@@ -28,8 +31,9 @@ class Home extends React.Component {
     return (
       <div>
         <Logo />
-        <Layout>
-          <div style={{ display: "grid", gridTemplateRows: "90% 10%" }}>
+        <Layout >
+        <Header headerTEXT='請選擇要抽幾張牌' />
+          <div style={{ padding: '20px'}}>
             <div className="indexFull">
               <Row gutter={[8, 16]}>
                 <Col className="background" span={6}>
@@ -94,7 +98,7 @@ class Home extends React.Component {
                 </Col>
               </Row>
             </div>
-            <p> 請選擇要抽幾張牌 </p>
+            {/* <p> 請選擇要抽幾張牌 </p> */}
           </div>
         </Layout>
       </div>

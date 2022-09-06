@@ -6,6 +6,7 @@ import { Row, Col, Popconfirm } from "antd";
 import "antd/dist/antd.css";
 import card from "./card.json";
 import Layout from "../component/Layout";
+import Header from '../component/Header'
 
 class Spread extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class Spread extends React.Component {
       showResult: false,
       cardIMG: "",
       cardDisplay: "",
+      headerChangeContent: ''
     };
     this.Spread = this.Spread.bind(this);
   }
@@ -74,6 +76,7 @@ class Spread extends React.Component {
       this.state;
     return (
       <Layout>
+        <Header headerTEXT='' />
         <div className="SpreadFull">
           <div className={thinkCircle ? "react" : "close"}>
             <div className="thinkLogo">
