@@ -1,19 +1,16 @@
 import Link from "next/link";
 import React from "react";
 class Header extends React.Component {
-
-  render(){
-    const { headerTEXT } = this.props;
-    return(
-      <Link href={"/"}>
-      <div className="headerStyle">
-        <h2 style={{ margin: "10px" }}>{headerTEXT}</h2>
-      </div>
-    </Link>
-    )
+  render() {
+    const { headerCONTENT } = this.props;
+    return (
+        <div className="headerStyle">
+          <div style={{ margin: "10px" }}>
+            {headerCONTENT}
+          </div>
+        </div>
+    );
   }
-
-
 }
 
 export default Header;

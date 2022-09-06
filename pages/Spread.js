@@ -2,12 +2,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { Component, useState, useRef, Suspense } from "react";
 import { withRouter } from "next/router";
+import { TiArrowLeftThick } from "react-icons/ti";
 import { Row, Col, Popconfirm } from "antd";
+import router from "next/router";
 import "antd/dist/antd.css";
 import card from "./card.json";
 import Layout from "../component/Layout";
-import Header from '../component/Header'
-
+import Header from "../component/Header";
 class Spread extends React.Component {
   constructor(props) {
     super(props);
@@ -16,12 +17,18 @@ class Spread extends React.Component {
       showResult: false,
       cardIMG: "",
       cardDisplay: "",
-      headerChangeContent: ''
+      headerChangeContent: "",
     };
     this.Spread = this.Spread.bind(this);
   }
 
   componentDidMount = () => {};
+
+  IconClick = (e) => {
+    router.push({
+      pathname: "/",
+    });
+  };
 
   Spread = () => {
     this.setState({
@@ -74,31 +81,46 @@ class Spread extends React.Component {
   render() {
     const { showResult, AllResult, thinkCircle, cardIMG, cardDisplay } =
       this.state;
+    let iconStyles = { color: "grey", fontSize: "1.5em" };
     return (
       <Layout>
-        <Header headerTEXT='' />
+        <Header
+          headerCONTENT={
+            <div className="SpreadHeader">
+             <p onClick={this.IconClick} style={{display: 'flex' }}  >
+              <TiArrowLeftThick style={iconStyles} />
+              <span style={{ fontSize: '15px' }}>重新抽牌</span>
+              </p>
+            </div>
+          }
+        />
         <div className="SpreadFull">
           <div className={thinkCircle ? "react" : "close"}>
             <div className="thinkLogo">
               {/* <div style={{ height: "100%", position: "absolute" }}> */}
-                <img
-                   
-                  className="thinkingBall"
-                  onClick={this.Spread}
-                  src="./images/logo_ballUP.webp"
-                  style={{  position: "absolute"  }}
-                  // background-position: left;
-                  // transform: translateX(-50%);
-                />
+              <img
+                className="thinkingBall"
+                onClick={this.Spread}
+                src="./images/logo_ballUP.webp"
+                style={{ position: "absolute" }}
+                // background-position: left;
+                // transform: translateX(-50%);
+              />
               {/* </div> */}
               <img
                 className="thinkingBallBased"
                 src="./images/logo_ballBased.webp"
-                style={{  position: "absolute" }}
+                style={{ position: "absolute" }}
               />
             </div>
             <div>
-              <div>您選擇抽{this.props.router.query.choose}張牌</div>
+              <div>
+                您選擇抽
+                <span style={{ fontSize: "20px", color: "burlywood" }}>
+                  {this.props.router.query.choose}
+                </span>
+                張牌
+              </div>
               <div>請冥想並點擊水晶球</div>
             </div>
           </div>

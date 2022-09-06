@@ -13,7 +13,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      headerTEXT: '請選擇要抽幾張牌'
+      headerTEXT: "請選擇要抽幾張牌",
     };
   }
 
@@ -31,13 +31,13 @@ class Home extends React.Component {
     return (
       <div>
         <Logo />
-        <Layout >
-        <Header headerTEXT='請選擇要抽幾張牌' />
-          <div style={{ padding: '20px'}}>
+        <Layout>
+          <Header headerCONTENT="請選擇要抽幾張牌" />
+          <div style={{ padding: "20px" }}>
             <div className="indexFull">
               <Row gutter={[8, 16]}>
                 <Col className="background" span={6}>
-                  <Button  type="primary" value={1} onClick={this.SelectNum} >
+                  <Button type="primary" value={1} onClick={this.SelectNum}>
                     1
                   </Button>
                 </Col>
