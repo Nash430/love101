@@ -91,7 +91,9 @@ class Spread extends React.Component {
               <TiArrowLeftThick style={iconStyles} />
               <span style={{ fontSize: '15px' }}>重新抽牌</span>
               </p>
+              {!thinkCircle && <p>請截圖回傳給占卜師</p>}
             </div>
+            
           }
         />
         <div className="SpreadFull">
