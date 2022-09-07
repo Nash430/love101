@@ -59,10 +59,10 @@ a {
         margin-top: 4px;
         margin-left: 10px;
       }
-      img:hover{
+      img:hover {
         transform: scale(1.05);
       }
-      img:active{
+      img:active {
         transform: scale(1.3);
       }
     }
@@ -123,7 +123,7 @@ a {
           border-color: none;
           transform: scale(1.05);
         }
-        &:active{
+        &:active {
           transform: scale(1.3);
         }
       }
@@ -132,17 +132,17 @@ a {
 }
 
 // spread
-.SpreadHeader{
+.SpreadHeader {
   display: flex;
   justify-content: space-around;
   white-space: nowrap;
-  .ChooseAgain{
+  .ChooseAgain {
     display: flex;
   }
-  .ChooseAgain :hover{
+  .ChooseAgain :hover {
     transform: scale(1.05);
   }
-  .ChooseAgain :active{
+  .ChooseAgain :active {
     transform: scale(1.3);
   }
 }
@@ -173,9 +173,11 @@ a {
         cursor: pointer;
         animation: mymove 1.5s infinite;
         -webkit-animation: mymove 1.5s infinite;
-        width: 380px;
-        height: 400px;
+        width: 250px;
+        height: 255px;
         display: block;
+        left: 75px;
+        top: 77px;
         // &:active{
         //   animation: SpreadAnimate 5s ;
         //   animation-duration: 5s;
@@ -189,6 +191,7 @@ a {
         width: 380px;
         height: 400px;
         display: block;
+        top: 50px;
       }
     }
   }
@@ -205,9 +208,9 @@ a {
   white-space: nowrap;
   height: 100%;
   overflow: auto;
-  .card-name{
+  .card-name {
     font-size: 1rem;
-    color: grey
+    color: grey;
   }
   .ant-col {
     margin: auto;
@@ -304,7 +307,7 @@ a {
     -webkit-transform: scale(1);
     opacity: 1;
   }
-  50%{
+  50% {
     -webkit-transform: scale(10);
   }
   100% {
@@ -385,7 +388,6 @@ a {
 }
 
 @media screen and (max-width: 426px) {
-
   .logoFull {
     .IMGbase {
       position: absolute;
@@ -425,14 +427,16 @@ a {
     grid-template-columns: 340px !important;
     .thinkLogo {
       .thinkingBall {
-        width: 340px !important;
-        height: 370px !important;
-        top: 10%;
+        width: 200px !important;
+        height: 203px !important;
+        left: 80px !important;
+        top: 60px !important;
+        // top: 10%;
       }
       .thinkingBallBased {
         width: 340px !important;
         height: 370px !important;
-        top: 10%;
+        top: 0px !important;
       }
     }
   }
@@ -452,14 +456,16 @@ a {
     grid-template-columns: 340px !important;
     .thinkLogo {
       .thinkingBall {
-        width: 340px !important;
-        height: 370px !important;
-        top: 10%;
+        width: 200px !important;
+        height: 203px !important;
+        left: 80px !important;
+        top: 60px !important;
+        // top: 10%;
       }
       .thinkingBallBased {
         width: 340px !important;
         height: 370px !important;
-        top: 10%;
+        top: 0px !important;
       }
     }
   }

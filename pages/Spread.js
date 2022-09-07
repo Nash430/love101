@@ -40,12 +40,11 @@ class Spread extends React.Component {
         var index = Math.floor(Math.random() * arr.length);
         AllResult.push(arr[index]);
         arr.splice(index,1);
-        
         console.log(AllResult, "AllResult");
-        this.setState({
-          AllResult: AllResult,
-        });
       }
+      this.setState({
+        AllResult: AllResult,
+      });
 
       setTimeout(() => {
         this.setState({
