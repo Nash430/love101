@@ -87,7 +87,7 @@ class Spread extends React.Component {
         <Header
           headerCONTENT={
             <div className="SpreadHeader">
-              <p onClick={this.IconClick} style={{ display: "flex" }}>
+              <p className="ChooseAgain" onClick={this.IconClick}>
                 <TiArrowLeftThick style={iconStyles} />
                 <span style={{ fontSize: "19px", color: "grey" }}>
                   重新抽牌
