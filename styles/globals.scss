@@ -344,6 +344,20 @@ a {
       max-width: 33%;
     }
   }
+  .thinkLogo {
+    .thinkingBall {
+      width: 200px !important;
+      height: 203px !important;
+      left: 80px !important;
+      top: 60px !important;
+      // top: 10%;
+    }
+    .thinkingBallBased {
+      width: 340px !important;
+      height: 370px !important;
+      top: 0px !important;
+    }
+  }
 }
 
 @media screen and (max-width: 1441px) {
@@ -354,6 +368,20 @@ a {
       height: 70%;
       top: 15%;
       padding: 0px;
+    }
+  }
+  .thinkLogo {
+    .thinkingBall {
+      width: 250px !important;
+      height: 255px !important;
+      left: 75px !important;
+      top: 50px !important;
+      // top: 10%;
+    }
+    .thinkingBallBased {
+      width: 380px !important;
+      height: 399px !important;
+      top: 20px !important;
     }
   }
 }

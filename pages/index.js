@@ -30,7 +30,7 @@ class Home extends React.Component {
         <Logo />
         <Layout>
           <Header headerCONTENT={ <p style={{ fontSize: '19px', color:'grey' }}>請選擇要抽幾張牌</p> } />
-          <div style={{ padding: "20px" }}>
+          <div style={{ padding: "20px", overflow: 'auto' }}>
             <div className="indexFull">
               <Row gutter={[8, 16]}>
                 <Col className="background" span={6}>
