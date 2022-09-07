@@ -22,7 +22,9 @@ class Spread extends React.Component {
     this.Spread = this.Spread.bind(this);
   }
 
-  componentDidMount = () => {};
+  componentDidMount = () => {
+    // window.location.reload()
+  };
 
   IconClick = (e) => {
     router.push({
@@ -31,51 +33,55 @@ class Spread extends React.Component {
   };
 
   Spread = () => {
-    this.setState({
-      thinkCircle: false,
-      showResult: true,
-    });
-    const AllResult = [];
-    var arr = card.cardData;
-    var cardNum = this.props.router.query.choose;
-    for (var i = 0; i < cardNum; i++) {
-      var index = Math.floor(Math.random() * arr.length);
-      AllResult.push(arr[index]);
-      arr.slice(index, 1);
-
-      console.log(AllResult, "AllResult");
-      this.setState({
-        AllResult: AllResult,
-      });
-    }
-
-    //ANTD RWD test
-    if (AllResult.length >= 4) {
-      if (AllResult.length == 5) {
+      const AllResult = [];
+      var arr = card.cardData;
+      var cardNum = this.props.router.query.choose;
+      for (var i = 0; i < cardNum; i++) {
+        var index = Math.floor(Math.random() * arr.length);
+        AllResult.push(arr[index]);
+        arr.splice(index,1);
+        
+        console.log(AllResult, "AllResult");
         this.setState({
-          cardDisplay: "loveCard",
-          cardIMG: "cardStyle05",
-        });
-      } else if (AllResult.length == 6) {
-        this.setState({
-          cardDisplay: "cardStyle06",
-          // cardIMG: "IMGStyle06",
-        });
-      } else if (AllResult.length >= 7 && AllResult.length <= 9) {
-        this.setState({
-          cardDisplay: "cardStyle789",
-          // cardIMG: "IMGStyle06",
-        });
-      } else {
-        this.setState({
-          cardIMG: "cardStyle04",
+          AllResult: AllResult,
         });
       }
-    } else if (AllResult.length == 3) {
-      this.setState({
-        cardIMG: "cardStyle03",
-      });
-    }
+
+      setTimeout(() => {
+        this.setState({
+          thinkCircle: false,
+          // showResult: true,
+        });
+      }, 50);
+
+      //ANTD RWD test
+      if (AllResult.length >= 4) {
+        if (AllResult.length == 5) {
+          this.setState({
+            cardDisplay: "loveCard",
+            cardIMG: "cardStyle05",
+          });
+        } else if (AllResult.length == 6) {
+          this.setState({
+            cardDisplay: "cardStyle06",
+            // cardIMG: "IMGStyle06",
+          });
+        } else if (AllResult.length >= 7 && AllResult.length <= 9) {
+          this.setState({
+            cardDisplay: "cardStyle789",
+            // cardIMG: "IMGStyle06",
+          });
+        } else {
+          this.setState({
+            cardIMG: "cardStyle04",
+          });
+        }
+      } else if (AllResult.length == 3) {
+        this.setState({
+          cardIMG: "cardStyle03",
+        });
+      }
+    
   };
 
   render() {
@@ -93,7 +99,11 @@ class Spread extends React.Component {
                   重新抽牌
                 </span>
               </p>
-              {!thinkCircle && <p style={{ fontSize: '19px', color: 'grey' }}>請截圖回傳給占卜師</p>}
+              {!thinkCircle && (
+                <p style={{ fontSize: "19px", color: "grey" }}>
+                  請截圖回傳給占卜師
+                </p>
+              )}
             </div>
           }
         />
@@ -120,7 +130,11 @@ class Spread extends React.Component {
                 </span>
                 張牌
               </div>
-              <div>心中思考著您的問題、人、事、物<br/>冥想完畢請點擊<span style={{ fontWeight: '600' }} >水晶球</span></div>
+              <div>
+                心中思考著您的問題、人、事、物
+                <br />
+                冥想完畢請點擊<span style={{ fontWeight: "600" }}>水晶球</span>
+              </div>
             </div>
           </div>
           <div style={{ height: "100%" }}>
@@ -137,7 +151,11 @@ class Spread extends React.Component {
                       className={cardDisplay}
                       key={item}
                     >
-                      <img className={cardIMG} src={value?.url} key={item.url} />
+                      <img
+                        className={cardIMG}
+                        src={value?.url}
+                        key={item.url}
+                      />
                       <br />
                       <span className="card-name">{value?.name}</span>
                     </Col>
