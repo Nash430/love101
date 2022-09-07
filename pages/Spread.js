@@ -81,34 +81,31 @@ class Spread extends React.Component {
   render() {
     const { showResult, AllResult, thinkCircle, cardIMG, cardDisplay } =
       this.state;
-    let iconStyles = { color: "grey", fontSize: "1.5em" };
+    let iconStyles = { color: "grey", fontSize: "2em" };
     return (
       <Layout>
         <Header
           headerCONTENT={
             <div className="SpreadHeader">
-             <p onClick={this.IconClick} style={{display: 'flex' }}  >
-              <TiArrowLeftThick style={iconStyles} />
-              <span style={{ fontSize: '15px' }}>重新抽牌</span>
+              <p onClick={this.IconClick} style={{ display: "flex" }}>
+                <TiArrowLeftThick style={iconStyles} />
+                <span style={{ fontSize: "19px", color: "grey" }}>
+                  重新抽牌
+                </span>
               </p>
-              {!thinkCircle && <p>請截圖回傳給占卜師</p>}
+              {!thinkCircle && <p style={{ fontSize: '19px', color: 'grey' }}>請截圖回傳給占卜師</p>}
             </div>
-            
           }
         />
         <div className="SpreadFull">
           <div className={thinkCircle ? "react" : "close"}>
             <div className="thinkLogo">
-              {/* <div style={{ height: "100%", position: "absolute" }}> */}
               <img
                 className="thinkingBall"
                 onClick={this.Spread}
                 src="./images/logo_ballUP.webp"
                 style={{ position: "absolute" }}
-                // background-position: left;
-                // transform: translateX(-50%);
               />
-              {/* </div> */}
               <img
                 className="thinkingBallBased"
                 src="./images/logo_ballBased.webp"
@@ -123,10 +120,9 @@ class Spread extends React.Component {
                 </span>
                 張牌
               </div>
-              <div>請冥想並點擊水晶球</div>
+              <div>心中思考著您的問題、人、事、物<br/>冥想完畢請點擊<span style={{ fontWeight: '600' }} >水晶球</span></div>
             </div>
           </div>
-          {/* {showResult ? "react" : "close"} */}
           <div style={{ height: "100%" }}>
             <Row gutter={8} className="AllResult">
               {AllResult && AllResult.length

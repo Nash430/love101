@@ -12,9 +12,6 @@ import Logo from "../component/Logo";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      headerTEXT: "請選擇要抽幾張牌",
-    };
   }
 
   SelectNum = (e) => {
@@ -32,7 +29,7 @@ class Home extends React.Component {
       <div>
         <Logo />
         <Layout>
-          <Header headerCONTENT="請選擇要抽幾張牌" />
+          <Header headerCONTENT={ <p style={{ fontSize: '19px', color:'grey' }}>請選擇要抽幾張牌</p> } />
           <div style={{ padding: "20px" }}>
             <div className="indexFull">
               <Row gutter={[8, 16]}>

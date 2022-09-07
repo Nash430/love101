@@ -50,12 +50,9 @@ a {
       transform: translate(0, -25%);
     }
     .iconImg {
-      // height: 100%;
       display: flex;
       justify-content: center;
-      // gap: 10px;
       img {
-        // margin: 5px;
         width: 40px;
         height: 40px;
         margin-top: 4px;
@@ -104,11 +101,7 @@ a {
   .ant-row {
     height: 100%;
     justify-content: center;
-
-    // padding-top: 15px;
-    // padding-bottom: 15px;
     .background {
-      // background-image: url(../public/images/btnBg.png);
       margin: 10px;
       border-radius: 4px;
       .ant-btn-primary {
@@ -130,7 +123,8 @@ a {
 // spread
 .SpreadHeader{
   display: flex;
-  column-gap: 39%;
+  justify-content: space-around;
+  white-space: nowrap;
 }
 
 .SpreadFull {
@@ -138,12 +132,10 @@ a {
   height: 100%;
   margin: auto;
   overflow: hidden;
-  // background-image: url(../public/images/new_bg.png);
   .close {
     display: none;
   }
   .react {
-    // position: relative;
     width: auto;
     height: 100%;
     display: grid;
@@ -151,20 +143,14 @@ a {
     grid-template-columns: 380px;
     justify-content: center;
     padding: 20px;
+    font-size: 1rem;
+    color: grey;
     .thinkLogo {
       position: relative;
       justify-content: center;
-      // right: 0%;
-      // top: 0%;
-
-      // width: 240px;
-      // height: 100%;
       .thinkingBall {
         z-index: 9;
         cursor: pointer;
-        // height: 100%;
-        // position: absolute;
-        // right: 0%;
         animation: mymove 1.5s infinite;
         -webkit-animation: mymove 1.5s infinite;
         width: 380px;
@@ -173,9 +159,6 @@ a {
       }
 
       .thinkingBallBased {
-        // height: 100%;
-        // right: 0%;
-        // position: absolute;
         width: 380px;
         height: 400px;
         display: block;
@@ -195,6 +178,10 @@ a {
   white-space: nowrap;
   height: 100%;
   overflow: auto;
+  .card-name{
+    font-size: 1rem;
+    color: grey
+  }
   .ant-col {
     margin: auto;
     .contentStyle {
@@ -340,9 +327,6 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  // .ant-col-xl-6 {
-  //   // max-width: 22%;
-  // }
   .AllResult {
     .cardStyle04 {
       width: 70%;
