@@ -41,7 +41,7 @@ class Spread extends React.Component {
     for (var i = 0; i < cardNum; i++) {
       var index = Math.floor(Math.random() * arr.length);
       AllResult.push(arr[index]);
-      arr.splice(index, 1);
+      arr.slice(index, 1);
 
       console.log(AllResult, "AllResult");
       this.setState({
@@ -137,9 +137,9 @@ class Spread extends React.Component {
                       className={cardDisplay}
                       key={item}
                     >
-                      <img className={cardIMG} src={value.url} key={item.url} />
+                      <img className={cardIMG} src={value?.url} key={item.url} />
                       <br />
-                      <span className="card-name">{value.name}</span>
+                      <span className="card-name">{value?.name}</span>
                     </Col>
                   ))
                 : null}
